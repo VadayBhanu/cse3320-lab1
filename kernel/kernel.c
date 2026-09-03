@@ -35,7 +35,7 @@ void kernel_main() {
 	if (fb_init() != 0) BUG();          // will show the OS logo
 
 	// test_ktimer();
-	// test_fb_voffset();               // cycle through color quads
+	test_fb_voffset();                  // cycle through color quads
 // 	donut();		// !STUDENT_DONOT_SEE    uses virtual timer for animation
 	/* STUDENT_TODO: your code here */
 
@@ -44,7 +44,7 @@ void kernel_main() {
 // 	// donut_simple();		// !STUDENT_DONOT_SEE		directly uses hw timer irq for animation
 	/* STUDENT_TODO: your code here */
 	
-	donut_text();		// textual UART donut animation
+	// donut_text();		// textual UART donut animation
 
 	while (1)
 		asm volatile("wfi");            // what happen here?
