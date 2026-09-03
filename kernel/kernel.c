@@ -42,7 +42,7 @@ void kernel_main() {
 	// donut();                        // uses virtual timer for animation
 
 	// Quest 10: pixel donut
-	// donut_simple();
+	donut_simple();
 
 	// donut_text();                   // textual UART donut animation
 
