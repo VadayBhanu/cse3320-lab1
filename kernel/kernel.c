@@ -44,7 +44,7 @@ void kernel_main() {
 // 	// donut_simple();		// !STUDENT_DONOT_SEE		directly uses hw timer irq for animation
 	/* STUDENT_TODO: your code here */
 	
-	// donut_text();		// uncomment to see the textual (uart) donut animation instead
+	donut_text();		// textual UART donut animation
 
 	while (1)
 		asm volatile("wfi");            // what happen here?
