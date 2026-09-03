@@ -11,7 +11,7 @@
 extern void test_ktimer();     // unittests.c
 extern void test_fb_voffset(); // unittests.c
 extern void donut();           // donut.c
-extern void donut_simple();    // donut.c
+extern void donut();    // donut.c
 extern void donut_text();      // donut.c
 
 void uart_send_string(char* str);
@@ -42,7 +42,7 @@ void kernel_main() {
 	// donut();                        // uses virtual timer for animation
 
 	// Quest 10: pixel donut
-	donut_simple();
+	donut();
 
 	// donut_text();                   // textual UART donut animation
 
